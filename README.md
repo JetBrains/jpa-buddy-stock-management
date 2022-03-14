@@ -1,6 +1,6 @@
 # Writing Integration Tests in Spring Boot App with JPA using JUnit5, Testcontainers and JPA Buddy
 
-You can see the complete guide on how we created the whole project in this repository in the following video:
+You can see the complete guide on how we created the whole project in this repository in the [following video](https://youtu.be/F9UZuRsAW_o):
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=F9UZuRsAW_o"><img src="https://img.youtube.com/vi/F9UZuRsAW_o/0.jpg" alt="Writing Integration Tests in Spring Boot App with JPA using JUnit5, Testcontainers and JPA Buddy"></a>
