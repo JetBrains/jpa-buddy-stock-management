@@ -1,6 +1,6 @@
 package jpa.buddy.stockmanagement.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.UUID;
 
 @Entity
