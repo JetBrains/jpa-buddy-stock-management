@@ -20,31 +20,30 @@ And the business logic of the app consists of `ProductRepository` that fetches t
 
 ## Dependencies
 
-To write a test that checks if the service method returns the correct value, we used [JUnit5](https://junit.org/) and [Testcontainers](https://www.testcontainers.org/) for our PostgreSQL database.
+To write a test that checks if the service method returns the correct value, we used Spring Boot Starter for [JUnit5](https://junit.org/) and [Testcontainers](https://www.testcontainers.org/) for our PostgreSQL database.
 
 ```xml
 <dependency>
-    <groupId>org.junit.jupiter</groupId>
-	<artifactId>junit-jupiter</artifactId>
-	<version>5.8.2</version>
-	<scope>test</scope>
-    </dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
+</dependency>
 <dependency>
 	<groupId>org.testcontainers</groupId>
 	<artifactId>testcontainers</artifactId>
-	<version>1.16.3</version>
+	<version>1.18.0</version>
 	<scope>test</scope>
 </dependency>
 <dependency>
 	<groupId>org.testcontainers</groupId>
 	<artifactId>junit-jupiter</artifactId>
-	<version>1.16.3</version>
+	<version>1.18.0</version>
 	<scope>test</scope>
 </dependency>
 <dependency>
 	<groupId>org.testcontainers</groupId>
 	<artifactId>postgresql</artifactId>
-	<version>1.16.3</version>
+	<version>1.18.0</version>
 	<scope>test</scope>
 </dependency>
 ```
@@ -54,7 +53,7 @@ To write a test that checks if the service method returns the correct value, we 
 In the `application-test.properties` file, we added the following property to make testcontainers create a PostgreSQL database instance for us.
 
 ```properties
-spring.datasource.url=jdbc:tc:postgresql:11.1:///shop
+spring.datasource.url=jdbc:tc:postgresql:alpine:///shop
 ```
 
 And in the test class, we specified that we need to use this and not the standard `application.properties` file for tests with the help of `@TestPropertySource` annotation.
