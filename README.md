@@ -1,4 +1,4 @@
-[![JetBrains team project](https://jb.gg/badges/team.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+[![JetBrains incubator project](https://jb.gg/badges/incubator-flat-square.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub) 
 
 # Writing Integration Tests in Spring Boot App with JPA using JUnit5, Testcontainers and JPA Buddy
 
